@@ -1,0 +1,16 @@
+<idea-plugin>
+    <id>dev.charmed.icons</id>
+    <name>Charmed Icons</name>
+    <version>0.6.1</version>
+    <vendor>Charmed Icons (port of littensy/charmed-icons)</vendor>
+    <idea-version since-build="242"/>
+    <description><![CDATA[
+        Charming file and folder icons, ported from the
+        <a href="https://github.com/iotacb/charmed-extended">Charmed Extended</a> VS Code icon theme.
+        Works in every JetBrains IDE, including WebStorm and Rider.
+    ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <fileIconProvider implementation="dev.charmed.icons.CharmedIconProvider" order="first"/>
+    </extensions>
+</idea-plugin>
