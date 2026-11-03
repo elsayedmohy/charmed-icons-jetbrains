@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>dev.charmed.icons</id>
     <name>Charmed Icons</name>
-    <version>0.6.1</version>
+    <version>0.6.2</version>
     <vendor>Charmed Icons (port of littensy/charmed-icons)</vendor>
     <idea-version since-build="242"/>
     <description><![CDATA[
@@ -12,5 +12,6 @@
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
         <fileIconProvider implementation="dev.charmed.icons.CharmedIconProvider" order="first"/>
+        <iconProvider implementation="dev.charmed.icons.CharmedPsiIconProvider" order="first"/>
     </extensions>
 </idea-plugin>

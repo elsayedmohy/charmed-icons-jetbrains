@@ -50,6 +50,10 @@ public final class CharmedIconProvider implements FileIconProvider, DumbAware {
 
     @Override
     public @Nullable Icon getIcon(@NotNull VirtualFile file, int flags, @Nullable Project project) {
+        return iconFor(file);
+    }
+
+    static @Nullable Icon iconFor(@NotNull VirtualFile file) {
         String name = file.getName().toLowerCase(Locale.ROOT);
         String path;
         if (file.isDirectory()) {
